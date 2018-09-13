@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contácto{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Contacto</h1>
+    <span class="subheading">Asesoría</span>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 mx-auto">
+            <p><b>Lugar:</b> Popayán (Cauca)-Colombia</p>
+            <p><b>Teléfono:</b> +57 314 855 6717</p>
+            <p><b>Correo:</b> amcaicedo@unimayor.edu.co</p>
+        </div>
+        <div id="map" class="col-lg-6 col-md-6 mx-auto"></div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">   
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid avatar" src="{% static 'core/img/mao.jpg'%}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8" style="margin-top:30px;">
+                <h2 class="section-heading">Andrés M. Caicedo R.</h2>   
+                <p align="justify">Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+            </div>
+        </div>  
+    </div>
+{% endblock %}
